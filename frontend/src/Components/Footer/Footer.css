@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    background: white;
+}
+
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: rgb(243,243,245);
+    color: black;
+    padding: 50px 20px;
+}
+
+footer .footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-container h3::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    background: black;
+    margin-top: 20px;
+}
+
+footer .footer-container li a:hover {
+    color: rgb(0,128,128);
+    transition: all 0.5s ease;
+}
+
+footer .footer-container .col-1 {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer .footer-container .col-1 img {
+    width: 14rem;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .col-1 p {
+    color: black;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+footer .footer-container .col-2 {
+    flex-basis: 15%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer .footer-container .col-2 h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .col-2 ul {
+    list-style: none;
+}
+
+footer .footer-container .col-2 ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-container .col-2 ul li a{
+    color: black;
+    text-decoration: none;
+}
+footer .footer-container .col-2 ul .l1 {
+    color: rgb(0,128,128);
+    text-decoration: none;
+}
+footer .footer-container .col-2 .l1{ 
+color: rgb(0,128,128);
+}
+
+footer .footer-container .col-3 {
+    flex-basis: 15%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer .footer-container .col-3 h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .col-3 ul {
+    list-style: none;
+}
+
+footer .footer-container .col-3 ul li {
+    margin-bottom: 2px;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+footer .footer-container .col-3 ul .f1 {
+    color: rgb(0,128,128);
+    text-decoration: none;
+}
+
+footer .footer-container .col-4 {
+    flex-basis: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer .footer-container .col-4 h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+footer form .far {
+    color: black;
+    margin-right: 10px;
+}
+
+footer form input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+
+footer form button {
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    outline: none;
+}
+
+footer .social-icons {
+    margin-top: 50px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: rgb(0,128,128);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+footer .social-icons a:hover {
+    background: rgb(0,128,128);
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+

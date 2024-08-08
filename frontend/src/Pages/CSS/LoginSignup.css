@@ -1,0 +1,106 @@
+login .loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Set your desired background color */
+  }
+  
+  login  .loginsignup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: glow 2s linear infinite; /* Add glowing effect */
+  }
+  
+  @keyframes glow {
+    0% {
+      border: 2px solid #e6eaee;
+    }
+    50% {
+      border: 2px solid #53c5be; /* Set the glowing color */
+    }
+    100% {
+      border: 2px solid #e6eaee;
+    }
+  }
+  
+  login .loginsignup h1 {
+    text-align: center;
+  }
+  
+  login .loginsignup-fields {
+    margin-bottom: 20px;
+  }
+  
+  login .loginsignup-fields input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  login .loginsignup-fields input:focus {
+    outline: none;
+    border-color: #53c5be; /* Highlight border on focus */
+  }
+  
+  login button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #53c5be; /* Button color */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  login button:hover {
+    background-color: #3ea1a6; /* Button color on hover */
+  }
+  
+  login .loginsignup-agree {
+    display: flex;
+    align-items: center;
+  }
+  
+  login .loginsignup-agree input {
+    margin-right: 10px;
+  }
+  
+  login .loginsignup-agree p {
+    font-size: 14px;
+  }
+  
+  login .loginsignup-login {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  login .loginsignup-login span {
+    color: #53c5be;
+    cursor: pointer;
+  }
+  
+/* LoginSignup.css */
+
+login .bar {
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+login .weak {
+  background-color: #ff6347; /* Red */
+}
+
+login .medium {
+  background-color: #ffa500; /* Orange */
+}
+
+login .strong {
+  background-color: #32cd32; /* Green */
+}

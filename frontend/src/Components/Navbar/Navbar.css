@@ -1,0 +1,285 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.nav-logo img{
+    padding: 5px;
+    width: 16rem; 
+}
+.nav-logo p{
+    color: black;
+    font-size: 38px;
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    cursor: pointer;
+}
+.nav-menu hr{
+    border: none;
+    width: 80px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: black; 
+    text-decoration: none;
+}
+
+.nav-menu .n1{
+  font-family: 'Poopins';
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: rgb(0,128,128);
+}
+.nav-menu .n2{
+  font-family: 'Poopins';
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: black;
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.nav-login-cart button{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 75px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    /* background: white; */
+    cursor: pointer;
+
+}
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+.nav-cart-count{
+   width: 22px; 
+   height: 22px;
+   display: flex;
+   justify-content: center;
+   margin-top: -35px;
+   margin-left: -55px;
+   border-radius: 11px;
+   font-size: 14px;
+   background-color: red;
+   color: white;
+}
+
+@media(max-width:1280px){
+    .navbar{
+        padding: 12px 50px;
+    }
+    .nav-logo img{
+        width: 10px;
+    }
+    .nav-logo p{
+        font-size: 25px;
+    }
+    .nav-menu{
+        gap: 30px;
+        font-size: 16px;
+    }
+    .nav-login-cart{
+        gap: 30px;
+    }
+    .nav-login-cart button{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .nav-cart-count{
+        margin-left: -40px;
+        font-size: 12px;
+    }
+}
+@media(max-width:1024px){
+    .navbar{
+        padding: 12px 30px;
+    }
+    .nav-menu{
+        gap: 25px;
+        font-size: 14px;
+    }
+    .nav-login-cart button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .nav-login-cart img{
+        width: 30px;
+    }
+    .nav-cart-count{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media(max-width:800px){
+    .navbar{
+        padding: 10px 0px;
+    }
+  
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .responsive_nav {
+      display: flex;
+    }
+  
+    .nav-btn {
+      display: block;
+    }
+  }
+  
+.navbar .cart1{
+    width: 3rem;
+}
+
+.navbar .btn1 {
+    position: relative;
+    bottom: 0.2rem; 
+    left: 1rem; 
+    z-index: 1;
+    border: 1px solid none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgb(0,128,128);
+    border-radius: 4px;
+    border: none;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+    
+    &:focus {
+      outline: 0;
+    }
+    
+    &:before, &:after{
+      position: absolute;
+      content: '';
+      display: block;
+      width: 140%;
+      height: 100%;
+      left: -20%;
+      z-index: -1000;
+      transition: all ease-in-out 0.5s;
+      background-repeat: no-repeat;
+    }
+    
+    &:before{
+      display: none;
+      top: -75%;
+      background-image:  
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle,  transparent 20%, #ff0081 20%, transparent 30%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%), 
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle,  transparent 10%, #ff0081 15%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%);
+      background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    }
+    
+    &:after{
+      display: none;
+      bottom: -75%;
+      background-image:  
+        radial-gradient(circle, #ff0081 20%, transparent 20%), 
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle,  transparent 10%, #ff0081 15%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%),
+        radial-gradient(circle, #ff0081 20%, transparent 20%);
+  
+      background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+    }
+   
+    &:active{
+      transform: scale(0.9);
+      background-color: darken(#ff0081, 5%);
+      box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+    }
+    
+    &.animate{
+      &:before{
+        display: block;
+        animation: topBubbles ease-in-out 0.75s forwards;
+      }
+      &:after{
+        display: block;
+        animation: bottomBubbles ease-in-out 0.75s forwards;
+      }
+    }
+  }
+  
+  @keyframes topBubbles {
+    0%{
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
+  @keyframes bottomBubbles {
+    0%{
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+      background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    }
+  }
+  
